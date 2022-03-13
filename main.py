@@ -4,10 +4,9 @@ import PyPDF2
 book = open('oopp.pdf', 'rb')
 pdfReader = PyPDF2.PdfFileReader(book)
 pages = pdfReader.numPages
-print(pages)
 friend = pyttsx3.init()
-for num in range(7, pages):
-    page = pdfReader.getPage(num)
+for number in range(7, pages):
+    page = pdfReader.getPage(number)
     text = page.extractText()
-    friend.say(text)
-    friend.runAndWait()
+    bro.say(text)
+    bro.runAndWait()
